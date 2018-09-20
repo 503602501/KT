@@ -1,0 +1,4 @@
+open: {link:"input",timeout:20}
+  page: {xpath:"//span[@class='iconfont icon-btn_right']",wait:5000,scroll:"bottom"}
+    list: {xpath:"//ul[@class='list-ul']/li"}
+      text: {xpath:"/div/a",attribute:"href",name:"链接",show:false}

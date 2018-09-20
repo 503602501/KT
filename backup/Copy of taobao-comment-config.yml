@@ -1,0 +1,8 @@
+open: {link:"input",timeout:30,threads:1,brower:"chrome-phone",exists:"//div[contains(@class,'sys_button gotoRate')]",scroll:1,remark:"淘宝商品的评论采集，同时采集评论的图片"}
+    click: {xpath:"//div[contains(@class,'sys_button gotoRate')]",wait:2000,scroll:-1}
+      list: {xpath:"//div[@class='rates_content_list']/ul/li",scroll:1,wait:1000}
+        text: {xpath:"/div[@class='info']/div[1]/span[@class='nick']",name:"用户"}
+        text: {xpath:"/div[@class='info']/div[1]/span[@class='vip']",name:"等级"}
+        text: {xpath:"/div[@class='info']/time",name:"发表日期"}
+        text: {xpath:"/blockquote",name:"评语"}
+        text: {xpath:"/ul[@class='sku']",name:"属性"}

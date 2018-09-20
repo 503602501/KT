@@ -1,0 +1,5 @@
+open: {url:"http://wwww.taobao.com/",timeout:30}
+   list: {xpath:"//*[@id='content']/p[not(@style)]->/img",wait:1,include:"img"}
+     text: {xpath:"//*[@id='title_text']",name:"商品名",major:true}
+     text: {xpath:"//*[@id='title_text']",name:"链接",major:true}
+  

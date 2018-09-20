@@ -1,0 +1,7 @@
+open: {link:"queues",timeout:10}
+   text: {xpath:"//div[@class='d-left']/div[contains(@class,'name')]",name:"商家"}
+   text: {xpath:"//div[@class='d-left']/div[contains(@class,'address')]/p[1]",name:"地址"}
+   text: {xpath:"//div[@class='d-left']/div[contains(@class,'address')]/p[2]",name:"电话"}
+   click: {xpath:"//div[@class='address']/p/b"}
+     text: {xpath:"//div[@class='map-cont']/a",attribute:"href",name:"维度",regex:"match|(?<=&c=)(.+?)(?=&)",wait:800,accurate:true}
+    

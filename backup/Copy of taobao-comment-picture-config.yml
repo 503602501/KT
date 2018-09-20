@@ -1,0 +1,5 @@
+open: {link:"input",timeout:30,threads:1,brower:"chrome-phone",exists:"//div[contains(@class,'sys_button gotoRate')]",scroll:1}
+    click: {xpath:"//div[contains(@class,'sys_button gotoRate')]",wait:2000,scroll:-1}
+    page: {xpath:"//div[@class='rates_pages_next']"}
+      list: {xpath:"//img[@class='rates_pic']",scroll:1,wait:1500}
+        text: {xpath:"",attribute:"src",name:"链接",show:true}

@@ -1,0 +1,7 @@
+open: {link:"https://m.1688.com/?src=desktop",timeout:30,threads:1,major:true,brower:"chrome-phone"}
+    click: {xpath:"//i[@class='fui-search-submit']",wait:1000}
+    click: {xpath:"//div[@class='s-type-button']",wait:2000}
+    click: {xpath:"//span[@data-type='company']",wait:1000}
+    input: {xpath:"//div[@class='search-input']/input",value:"input",wait:1000,keydown:true}
+    list: {xpath:"//div[@class='search-list-company']/ul/li",wait:1500}
+      text: {xpath:"/div/a",attribute:"href",name:"链接",show:true}

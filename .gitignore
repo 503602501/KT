@@ -1,0 +1,8 @@
+/tmp
+/chrome/*
+/target
+.settings/
+/log/*
+.classpath
+*.log
+.project
